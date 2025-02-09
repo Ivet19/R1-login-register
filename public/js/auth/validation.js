@@ -1,17 +1,16 @@
 export const isValidUsername = (username) => {
   let isValid;
-  const minimumUsernameLength = 5;
-  isValid = username.length >= minimumUsernameLengt;
+
+  isValid = username.length >= 5;
 
   return isValid;
 };
 
 export const isValidPassword = (password) => {
   let isValid;
-  const minimumPasswordLength = 8;
 
   isValid =
-    password.length >= minimumPasswordLength &&
+    password.length >= 8 &&
     /\d/.test(password) &&
     /[A-ZÀÈÌÒÙÁÉÍÓÚÑ]/.test(password);
 
@@ -27,8 +26,8 @@ export const isSamePassword = (password1, password2) => {
 
 export const isAdultAge = (age) => {
   let isAdult;
-  const minimumAdultAge = 18;
-  isAdult = age >= minimumAdultAge;
+
+  isAdult = age >= 18;
 
   return isAdult;
 };
